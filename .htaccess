@@ -1,0 +1,7 @@
+Header add X-Time "%t"
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+
+SetEnv SLIM_MODE production
+
